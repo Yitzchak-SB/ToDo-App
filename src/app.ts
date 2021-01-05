@@ -15,8 +15,6 @@ const uri: string = `mongodb+srv://${credentials.MONGO_USER}:${credentials.MONGO
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
 mongoose.set("useFindAndModify", false);
 
-console.log(uri);
-
 mongoose
   .connect(uri, options)
   .then(() =>
